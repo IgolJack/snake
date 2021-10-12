@@ -347,6 +347,7 @@ function snakeDied() {
   document.querySelector("#refresh").style.display = "block";
   hideText();
   isFinish();
+  gameObject.level = 1;
 }
 
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
