@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <style>
+        @font-face{
+        font-family: Cozette; /* Гарнитура шрифта */
+        src: url(CozetteVector.ttf); /* Путь к файлу со шрифтом */
+        }
+        body {
+            margin: 0;
+            font-family: Cozette;
+            font-size: large;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        span {
+            display: contents;
+        }
+        canvas {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #count {
+            font-weight: 700;
+        }
+        #levelText{
+            display: none;
+        }
+        #refresh {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <span>Score: </span><span id="count"></span>/<span id="needEat"></span>
+    <span>Level: </span><span id="lvl"></span> 
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <span id="levelText">Уровень пройден!</span> 
+    <span id="refresh">Вы проиграли!</span> 
+    <script src="index.js"></script>
+</body>
+</html>
